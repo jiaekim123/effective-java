@@ -1,4 +1,4 @@
-package effectivejava.item24;
+package item24;
 
 public class Developer {
     private String name;

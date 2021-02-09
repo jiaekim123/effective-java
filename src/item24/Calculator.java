@@ -1,4 +1,4 @@
-package effectivejava.item24;
+package item24;
 
 import java.util.HashMap;
 import java.util.LinkedList;

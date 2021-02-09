@@ -1,4 +1,4 @@
-package effectivejava.item3;
+package item3;
 
 public interface LottoNumber {
 }

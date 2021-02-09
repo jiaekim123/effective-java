@@ -1,4 +1,4 @@
-package effectivejava.item24;
+package item24;
 
 public class TestThread {
     public static void main(String[] args) {
