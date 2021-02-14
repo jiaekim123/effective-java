@@ -23,7 +23,7 @@ public class Text {
 }
 ```
 
-다음과 같은 식으로 비트별 OR를 사용해 여러 상수를 하나의 집합으로 모을 수 있으며, 이렇게 만들어진 집합을 비트 필드(bit field)라 한다.
+다음과 같은 식으로 `비트별 OR를 사용해 여러 상수를 하나의 집합으로 모을 수 있으며, 이렇게 만들어진 집합을 비트 필드(bit field)`라 한다.
 
 ```java
 text.applyStyles(STYLE_BOLD | STYLE_ITALIC);
