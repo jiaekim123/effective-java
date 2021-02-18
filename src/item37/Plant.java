@@ -31,18 +31,18 @@ class Plant {
             new Plant("Rosemary", LifeCycle.PERENNIAL)
         };
 
-        // Using ordinal() to index into an array - DON'T DO THIS!  (Page 171)
-        Set<Plant>[] plantsByLifeCycleArr =
-                (Set<Plant>[]) new Set[Plant.LifeCycle.values().length];
-        for (int i = 0; i < plantsByLifeCycleArr.length; i++)
-            plantsByLifeCycleArr[i] = new HashSet<>();
-        for (Plant p : garden)
-            plantsByLifeCycleArr[p.lifeCycle.ordinal()].add(p);
-        // Print the results
-        for (int i = 0; i < plantsByLifeCycleArr.length; i++) {
-            System.out.printf("%s: %s%n",
-                    Plant.LifeCycle.values()[i], plantsByLifeCycleArr[i]);
-        }
+        // // Using ordinal() to index into an array - DON'T DO THIS!  (Page 171)
+        // Set<Plant>[] plantsByLifeCycleArr =
+        //         (Set<Plant>[]) new Set[Plant.LifeCycle.values().length];
+        // for (int i = 0; i < plantsByLifeCycleArr.length; i++)
+        //     plantsByLifeCycleArr[i] = new HashSet<>();
+        // for (Plant p : garden)
+        //     plantsByLifeCycleArr[p.lifeCycle.ordinal()].add(p);
+        // // Print the results
+        // for (int i = 0; i < plantsByLifeCycleArr.length; i++) {
+        //     System.out.printf("%s: %s%n",
+        //             Plant.LifeCycle.values()[i], plantsByLifeCycleArr[i]);
+        // }
 
         // Using an EnumMap to associate data with an enum (Page 172)
         Map<Plant.LifeCycle, Set<Plant>> plantsByLifeCycle =
