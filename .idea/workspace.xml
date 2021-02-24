@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3980afcf-c0d9-4fbd-a7dc-f6cddeeecf76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/item24/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item24/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item24/ListOfTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item24/SortingMachine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item24/TestThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item27/WarningTest$Lark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item27/WarningTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item27/WarningTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item28/Chooser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item29/tech1/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item29/tech2/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item3/LottoNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item3/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item3/ResultLottoNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item3/UserLottoNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item30/GenericSingletonFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item30/RecursiveTypeBound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item30/Union.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item30/Union.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item31/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item32/Dangerous.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item32/FlattenWithVarargs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item32/PickTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item32/SafePickTwo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item32/TimeCapsule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item33/Favorites.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item33/PrintAnnotation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item34/Inverse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item34/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item34/PayrollDay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item34/Planet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item36/Text.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item37/Phase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item37/Plant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item38/BasicOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item38/ExtendedOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item38/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item39/RunTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item39/Sample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item39/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item40/Bigram.java" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ovFCUmynhUIZrbZ3cjggmo9Zbw" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3980afcf-c0d9-4fbd-a7dc-f6cddeeecf76" name="Default Changelist" comment="" />
+      <created>1614159029864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614159029864</updated>
+      <workItem from="1614159031038" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
