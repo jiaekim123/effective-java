@@ -18,7 +18,7 @@
 
 ##### 스트림 패러다임을 이해하지 못한 채 API만 사용했다 - 따라하지 말 것!
 ```java
-Map<Stirng, Long> freq = new HashMap<>();
+Map<String, Long> freq = new HashMap<>();
 try (Stream<String> words = new Scanner(file).token()) {
     words.forEach(wrod -> {
         freq.merge(word.toLowerCase(), 1L, Long::sum);
