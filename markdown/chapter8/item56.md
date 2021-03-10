@@ -47,9 +47,116 @@ $ javadoc -d docs *.java -encoding UTF-8 -charset UTF-8 -docencoding UTF-8
 #### 4.5 `{@literal}`
 - 주석 내에 HTML 요소나 다른 자바독 태그를 무시한다.
 - `{@code}`와 비슷하지만 코드 폰트로 렌더링하지 않는다.
-#### 4.6 `implSpec`
+#### 4.6 `@implSpec`
 - 해당 메서드와 하위 클래스 사이의 계약을 설명한다.
 - 하위 클래스들이 그 메서드를 상속하거나 super 키워드를 이용해 호출할 때 그 메서드가 어떻게 동작하는지 명확히 인지할 수 있도록 도와준다.
+#### 4.7 `{@inheritDoc}`
+- 상위 타입의 문서화 주석 일부를 상속할 수 있다.
+
+##### 예시
+```java
+package chapter8.item56;
+
+/**
+ * @author jiae
+ * 게임 캐릭터의 정보를 가지고 있는 클래스
+ */
+public class GameCharactor {
+    private int level;
+    private String name;
+    private String weapon;
+    private Job job;
+    /**
+     * 게임 캐릭터를 생성합니다.
+     * <p>기본 무기는 목검, 기본 직업은 Beginner입니다.
+     * @param name 캐릭터의 이름; 길이는 3자 이상 10자 이하이어야 합니다.
+     * @throws IllegalArgumentException 캐릭터의 name 길이가 정해진 범위를 벗어나면, 즉 ({@code name < 3 || name > 10}) 이면 발생합니다.
+     */
+    public GameCharactor(String name) {
+        this.level = 1;
+        if (name.length() < 3 || name.length() > 10) throw new IllegalArgumentException("캐릭터의 이름은 3자 이상 10자 이하입니다.");
+        this.name = name;
+        this.weapon = "목검";
+        this.job = Job.Beginner;
+    }
+
+    /**
+     * 캐릭터의 레벨을 반환합니다.
+     * @return 캐릭터의 레벨
+     */
+    public int getLevel(){
+        return this.level;
+    }
+
+    /**
+     * 캐릭터의 직업을 변경합니다.
+     * @param job 캐릭터의 변경할 직업
+     * @throws IllegalArgumentException 캐릭터의 레벨이 10이 넘지 않았다면 발생합니다.
+     */
+    public void setJob(Job job){
+        if (this.level < 10) throw new IllegalArgumentException("캐릭터의 레벨이 10을 넘지 않습니다.");
+        this.job = job;
+    }
+
+    /**
+     * 캐릭터의 무기를 변경해주는 메서드입니다.
+     * @param weapon 캐릭터가 착용할 무기
+     * @param weaponLevel 무기의 레벨
+     * @throws IllegalArgumentException 캐릭터의 레벨보다 무기의 레벨이 높으면 발생합니다.
+     */
+    public void setWeapon(String weapon, int weaponLevel){
+        if (weaponLevel > this.level) throw new IllegalArgumentException("캐릭터의 레벨보다 무기의 레벨이 높습니다.");
+        this.weapon = weapon;
+    }
+
+    /**
+     * 캐릭터의 레벨을 올려주는 메서드입니다.
+     */
+    public void levelUp(){
+        this.level++;
+    }
+
+    /**
+     * 캐릭터의 status값을 보여주는 메서드입니다.
+     * @return 직업, 레벨, 이름, 무기를 반환합니다.
+     */
+    public String getCharactorStatus() {
+        return "GameCharactor [job=" + job + ", level=" + level + ", name=" + name + ", weapon=" + weapon + "]";
+    }
+    
+    /**
+     * 캐릭터의 직업을 나타냅니다.
+     */
+    public enum Job{
+        /** 초보자 */
+        Beginner, 
+        /** 전사 */
+        Warrior, 
+        /** 마법사 */
+        Wizard, 
+        /** 궁수 */
+        Archer, 
+        /** 도적 */
+        Thief
+    }
+}
+```
+
+![item56_4](https://user-images.githubusercontent.com/37948906/110622085-585aca80-81de-11eb-8a5c-462336ec3b88.PNG)
+![item56_5](https://user-images.githubusercontent.com/37948906/110622106-5e50ab80-81de-11eb-9911-d4a97bf09861.PNG)
+![item56_6](https://user-images.githubusercontent.com/37948906/110622110-5ee94200-81de-11eb-9025-e498369ef92e.PNG)
+![item56_7](https://user-images.githubusercontent.com/37948906/110622116-601a6f00-81de-11eb-8fbb-c2a959c91091.PNG)
+
+
+## 5. API 문서화에서 자주 누락되는 설명 두가지를 포함하자
+- 1. 클래스 혹은 정적 메서드가 스레드 안전하든 그렇지 않든, `쓰레드 안전 수준`을 반드시 API 설명에 포함해야 한다.
+- 2. 직렬화할 수 있는 클래스라면 직렬화 형태도 API 설명에 기술해야 한다.
+
+## 핵심 정리
+- 문서화 주석은 aPI를 문서화하는 가장 훌륭하고 효과적인 방법이다.
+- 공개 API라면 빠짐없이 설명을 달아야 한다.
+- 표준 규약을 일관되게 지키자.
+- 문서화 주석에 임의의 HTML 태그를 사용할 수 있음을 기억하라. 단, HTML 메타문자는 특별하게 취급해야 한다.
 
 ### 참고 자료
 - Effective Java 3/E
